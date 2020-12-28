@@ -187,6 +187,8 @@ footer {
 
 }
 
+
+
 button {
 
     padding-right: 1vw;
@@ -261,7 +263,7 @@ button:hover {
     grid-area:settings;
 }
 
-.settings {
+.Settings {
     grid-area: settings;
     justify-self: center;
 }
