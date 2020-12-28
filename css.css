@@ -1,0 +1,239 @@
+/*the header is below here*/
+
+body {
+    font-family: arial,sans-serif;
+    color: #000;
+    
+    font-size: 1vw;
+    margin: 0;
+}
+
+
+nav{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 5vw 5vw 75vw 5vw 5vw 5vw 5vw;
+    grid-template-rows: 5vw;
+    grid-template-areas:
+    "about store blankSpace images myIcon self-image";
+    color: black !important;
+}
+
+
+.About {
+
+    grid-area: about;
+    opacity: 0.75;
+
+}
+
+.Store {
+    grid-area: store;
+    opacity: 0.75;
+
+}
+
+.Images {
+    grid-area: images;
+    opacity: 0.75;
+}
+
+.myIcon {
+    grid-area: myIcon;
+    max-width: 100%; 
+    display:block; 
+    height: auto;
+
+}
+
+.Self-Image {
+    grid-area: self-image;
+    max-width: 100%; 
+    display:block; 
+    height: auto;
+
+
+}
+
+.blankSpace {
+    grid-area: blankSpace;
+    opacity: 0 !important;
+}
+
+.About:hover {
+
+    text-decoration: underline;
+
+}
+
+.Store:hover {
+
+    text-decoration: underline;
+
+}
+
+.Images:hover {
+
+    text-decoration: underline;
+}
+
+.myIcon:hover {
+    
+    text-decoration: underline;
+
+}
+
+
+/* the header is above here */
+
+.imageAndSearchContainer {
+    display: grid;
+    justify-content:center;
+    grid-template-rows: 15vh 10vh 10vh;
+    margin-top: 10vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    grid-template-areas:
+    ". logo ."
+    ". search ."
+    ". spanishOffering ."
+    ;
+
+
+}
+
+.logo{
+    grid-area: logo;
+    justify-self: center;
+    align-self: center;
+ 
+
+    
+}
+
+.search {
+    display: grid;
+    grid-area: search;
+   
+    height: 40%;
+  
+  
+
+   
+}
+
+
+input {
+    border-radius: 20vh
+}
+
+input[type="text"], input[type="password"], textarea, select { 
+    outline: none;
+}
+
+.spanishOffering {
+    grid-area: spanishOffering;
+    justify-self: center;
+    align-self: center; 
+}
+
+
+footer {
+   display: grid;
+   
+   opacity: 0.75;
+   
+   position:fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+    grid-template-columns: repeat (7, 1fr);
+    grid-template-rows: 3.5vw;
+    align-items: center;
+   grid-template-areas: 
+       "advertising business howSearchWorks carbonNeutral privacy terms  settings ";
+
+       background-color: rgb(240, 240, 240);
+      
+
+
+
+
+}
+
+
+
+
+
+.Advertising:hover {
+    text-decoration:underline;
+}
+
+.Business:hover {
+    text-decoration: underline;
+    
+}
+
+.HowSearchWorks:hover {
+    text-decoration: underline;
+    
+}
+
+.CarbonNeutralSince2007:hover {
+    text-decoration: underline;
+   
+}
+
+
+.Privacy:hover {
+    text-decoration: underline;
+    
+}
+
+.Terms:hover {
+    text-decoration: underline;
+    
+}
+
+
+.Settings:hover {
+    text-decoration: underline;
+    grid-area:settings;
+}
+
+.settings {
+    grid-area: settings;
+    justify-self: center;
+}
+
+.Advertising {
+    grid-area:advertising;
+    justify-self: center;
+    
+}
+
+.Business {
+    grid-area: business;
+    justify-self: center;
+}
+
+.HowSearchWorks {
+    grid-area: howSearchWorks;
+    justify-self: center;
+}
+
+.CarbonNeutralSince2007 {
+    grid-area: carbonNeutral;
+    justify-self: center;
+}
+
+.Privacy {
+    grid-area:privacy;
+    justify-self: center;
+}
+
+.Terms {
+    grid-area: terms;
+    justify-self: center;
+}
