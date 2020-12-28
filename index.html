@@ -11,10 +11,19 @@
     <!-- my style sheet is below-->
     <link rel="stylesheet" type="text/css" href="css.css">
     <!-- my style sheet is above-->
+    <script>
+        window.onload = function () { setTimeout(function () { document.body.style.opacity = "100"; }, 500); };
+    </script>
 
 </head>
 
 <body>
+
+    <style>
+        body {
+            opacity: 0;
+        }
+    </style>
 
 
     </style>
@@ -37,21 +46,28 @@
         <div class="search"> <input type="text" class="searchbar"></div>
         <!-- <div class="Logo"> <img src="googleLogo.png"></div>-->
 
+        <div class="buttons">
+            <button class="searchButton">Google Search</button>
+            <button class="lucky">I'm Feeling Lucky</button>
+        </div>
+
         <div class="spanishOffering">Google offered in: <a href="#">Spanish</a></div>
     </main>
-    <div="footerHolder">
-        <footer class="footer">
-            <div class="Advertising"><a href="#" style="color: black">Advertising</a> </div>
-            <div class="Business"><a href="#" style="color: black">Business</a></div>
-            <div class="HowSearchWorks"><a href="#" style="color: black">How Search Works</a></div>
-            <div class="CarbonNeutralSince2007"><a href="#" style="color: black">Carbon neutral since 2007</a></div>
-            <div class="Privacy"><a href="#" style="color: black">Privacy</a></div>
-            <div class="Terms"><a href="#" style="color: black">Terms</a></div>
-            <div class="Settings"><a href="#" style="color: black">Settings</a></div>
 
 
-        </footer>
-        </div>
+
+    <footer class="footer">
+        <div class="Advertising"><a href="#" style="color: black">Advertising</a> </div>
+        <div class="Business"><a href="#" style="color: black">Business</a></div>
+        <div class="HowSearchWorks"><a href="#" style="color: black">How Search Works</a></div>
+        <div class="CarbonNeutralSince2007"><a href="#" style="color: black">Carbon neutral since 2007</a></div>
+        <div class="Privacy"><a href="#" style="color: black">Privacy</a></div>
+        <div class="Terms"><a href="#" style="color: black">Terms</a></div>
+        <div class="Settings"><a href="#" style="color: black">Settings</a></div>
+
+
+    </footer>
+    </div>
 </body>
 
 </html>

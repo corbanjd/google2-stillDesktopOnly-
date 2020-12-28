@@ -92,16 +92,25 @@ nav{
 .imageAndSearchContainer {
     display: grid;
     justify-content:center;
-    grid-template-rows: 15vh 10vh 10vh;
+    grid-template-rows: 15vh 10vh 10vh 10vh;
     margin-top: 10vh;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     grid-template-areas:
     ". logo ."
     ". search ."
+    ". buttons ."
     ". spanishOffering ."
     ;
 
+
+}
+
+.buttons {
+    grid-area:buttons;
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
 
 }
 
@@ -127,7 +136,21 @@ nav{
 
 
 input {
-    border-radius: 20vh
+    border-radius: 20vh;
+    border-color: rgb(201, 201, 201);
+    border-width: 1px;
+    
+}
+
+input:hover{
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  0 12.5px 10px rgba(0, 0, 0, 0.035),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  0 100px 80px rgba(0, 0, 0, 0.07)
+;
 }
 
 input[type="text"], input[type="password"], textarea, select { 
@@ -137,7 +160,7 @@ input[type="text"], input[type="password"], textarea, select {
 .spanishOffering {
     grid-area: spanishOffering;
     justify-self: center;
-    align-self: center; 
+    align-self: flex-start; 
 }
 
 
@@ -164,8 +187,19 @@ footer {
 
 }
 
+.searchButton {
+    position: relative;
+    right: 1vw;
+    border-style: none;
+    
+}
 
+.lucky{
+    position: relative;
+    left: 1vw;
+    border-style: none;
 
+}
 
 
 .Advertising:hover {
